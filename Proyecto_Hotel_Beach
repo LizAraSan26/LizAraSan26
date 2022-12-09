@@ -1,0 +1,106 @@
+Algoritmo Hotel_Beach
+	Escribir "Bienvenidos al hotel Beach, ¿tiene alguna reservacion?"
+	Escribir "Si tiene reservación escribir (A), y si no tiene reservación escribir (B)"
+	A = "A"
+	B = "B" 
+	leer respuesta
+	Si respuesta = B Entonces
+		
+		Escribir "Menu de habitaciones"
+		Escribir "1. Habitacion individual"
+		Escribir "2. Habitacion doble"
+		Escribir "3. Habitacion doble"
+		Escribir "4. Habitacion Suites Junior"
+		Escribir "5. Habitacion VIP"
+		Escribir "Elija el numero de habitacion que prefiera"
+		leer habitacion 
+		Segun habitacion Hacer
+			1:
+				Escribir "La habitacion 1, tiene un costo de $3,000 por dia y se encuentra disponible "
+				costo = 3000
+				Escribir "¿A nombre de quien sera la reservación?"
+				Leer nombre 
+				Escribir "¿cuantos dias se hospedara? "
+				Leer dias
+				subtotal = costo * dias 
+				iva = subtotal * 0.16
+				total = subtotal + iva 
+				Escribir "Su subtotal es de $" subtotal 
+				Escribir "su total a pagar es $" total
+				Escribir "Bienvenido al Hotel Beach "
+			2:
+				Escribir "La habitacion 2, tiene un costo de $4,000 por dia"
+				Escribir "Pero se encuentra reservada, vuelva al menu principal."
+				Escribir "Gracias por su preferencia"
+			3:
+				Escribir "La habitacion 3, tiene un costo de $4,000 por dia y se encuentra disponible "
+				costo = 4000
+				Escribir "¿A nombre de quien sera la reservación?"
+				Leer nombre 
+				Escribir "¿cuantos dias se hospedara? "
+				Leer dias 
+				subtotal= costo * dias 
+				iva = subtotal * 0.16
+				total = subtotal + iva 
+				Escribir "Su subtotal es de $" subtotal 
+				Escribir "su total a pagar es $" total
+				Escribir "Bienvenido al Hotel Beach "
+			4:
+				Escribir "La habitacion 4, tiene un costo de $5,000 por dia y se encuentra disponible "
+				costo = 5000
+				Escribir "¿A nombre de quien sera la reservación?"
+				Leer nombre 
+				Escribir "¿cuantos dias se hospedara? "
+				Leer dias 
+				subtotal= costo * dias 
+				iva = subtotal * 0.16
+				total = subtotal + iva 
+				Escribir "Su subtotal es de $" subtotal 
+				Escribir "su total a pagar es $" total
+				Escribir "Bienvenido al Hotel Beach "
+			5:
+				Escribir "La habitacion 5, tiene un costo de $6,000 por dia y se encuentra disponible "
+				costo= 6000
+				Escribir "¿A nombre de quien sera la reservación?"
+				Leer nombre 
+				Escribir "¿cuantos dias se hospedara? "
+				Leer dias 
+				cont=0
+				
+				Escribir "¿Cuantas personas se hospedaran?"
+				leer personas
+				Repetir
+					cont=cont+1
+					Escribir "Nombre de la persona? No. " , cont
+					
+					leer NombrePersona
+					Escribir "¿Que edad tiene?"
+					leer edad
+					
+					
+				Hasta Que cont = personas
+				Escribir "Gracias a ustedes " , cont " por su preferencia"
+				subtotal= costo * dias 
+				iva = subtotal * 0.16
+				total = subtotal + iva 
+				Escribir "Su subtotal es de $" subtotal 
+				Escribir "su total a pagar es $" total
+				Escribir "Bienvenidos al Hotel Beach "
+				
+			De Otro Modo:
+				Escribir "opción no valida"
+		Fin Segun
+		
+		Fin Si			
+		 
+		
+		Si respuesta = A Entonces
+			Escribir "Podria darnos sus datos para verificar su reservacion"
+			Escribir "¿Cual es su nombre?"
+			Leer nombre 
+			Escribir "Bienvenidos al Hotel Beach, su reservacion fue aprobada, en un momento le daremos su habitacion, gracias por su preferencia "
+			
+		Fin Si
+		
+	
+FinAlgoritmo
